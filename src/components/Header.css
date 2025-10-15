@@ -24,14 +24,23 @@
 }
 
 .logo-image {
-  height: 50px;
+  height: 60px;
   width: auto;
   object-fit: contain;
-  transition: transform 0.3s ease;
+  background: linear-gradient(145deg, #ffffff, #f0f4f8);
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 
+              0 2px 4px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .logo a:hover .logo-image {
-  transform: scale(1.05);
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 
+              0 4px 8px rgba(0, 0, 0, 0.12);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .logo-text {
@@ -94,8 +103,9 @@
   }
 
   .logo-image {
-    height: 40px;
+    height: 48px;
     width: auto;
+    padding: 8px 12px;
   }
 
   .logo-text {
