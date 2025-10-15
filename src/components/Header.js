@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
+import logo from '../assets/logo.png';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,11 +24,7 @@ function Header() {
       <div className="header-container">
         <div className="logo">
           <Link to="/" onClick={closeMenu}>
-            <div className="logo-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/>
-              </svg>
-            </div>
+            <img src={logo} alt="Jarurat Care Logo" className="logo-image" />
             <span className="logo-text">Jarurat Care</span>
           </Link>
         </div>
@@ -63,4 +60,3 @@ function Header() {
 }
 
 export default Header;
-
