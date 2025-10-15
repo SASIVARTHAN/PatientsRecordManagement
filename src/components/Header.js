@@ -25,10 +25,9 @@ function Header() {
           <Link to="/" onClick={closeMenu}>
             <img 
               src="/logo.png" 
-              alt="Jarurat Care Logo" 
+              alt="Jarurat Care" 
               className="logo-image" 
             />
-            <span className="logo-text">Jarurat Care</span>
           </Link>
         </div>
 
