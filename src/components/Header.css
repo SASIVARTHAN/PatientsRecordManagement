@@ -9,7 +9,7 @@
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,9 +24,12 @@
 }
 
 .logo-image {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
+  background: white;
+  border-radius: 50%;
+  padding: 4px;
   transition: transform 0.3s ease;
 }
 
@@ -88,7 +91,16 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .header-container {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
   }
 
   .menu-toggle {

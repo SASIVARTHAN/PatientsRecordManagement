@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
-import logo from '../assets/logo.png';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +23,11 @@ function Header() {
       <div className="header-container">
         <div className="logo">
           <Link to="/" onClick={closeMenu}>
-            <img src={logo} alt="Jarurat Care Logo" className="logo-image" />
+            <img 
+              src="/logo.png" 
+              alt="Jarurat Care Logo" 
+              className="logo-image" 
+            />
             <span className="logo-text">Jarurat Care</span>
           </Link>
         </div>
